@@ -23,6 +23,21 @@
     </plugins>
     </build>
 
+
+    <properties>
+        <testng.version>6.10</testng.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <modules>
         <module>Strategy</module>
     </modules>
