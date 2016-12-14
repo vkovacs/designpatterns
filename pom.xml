@@ -39,9 +39,17 @@
         </dependencies>
     </dependencyManagement>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+        </dependency>
+    </dependencies>
+
     <modules>
         <module>strategy</module>
         <module>observer</module>
+        <module>decorator</module>
     </modules>
 
 
