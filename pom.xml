@@ -5,9 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>hu.crs.pattern</groupId>
-    <artifactId>DesignPatterns</artifactId>
+    <artifactId>designpatterns</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <name>Design Patterns</name>
 
     <build>
         <plugins>
@@ -39,7 +40,7 @@
     </dependencyManagement>
 
     <modules>
-        <module>Strategy</module>
+        <module>strategy</module>
         <module>observer</module>
     </modules>
 
