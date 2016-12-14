@@ -1,3 +1,1 @@
-Allows for the dynamic wrapping of objects in order to modify their existing responsibilities and behaviours. 
-
-Structural pattern.
+Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality. 

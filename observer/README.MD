@@ -5,3 +5,8 @@
  When implementing the Observer pattern, there are two main approaches to consider: the **'push' model** and the **'pull' model**.
  
  In the **'push' model**, the subject (i.e. the Observable) sends the observer on notification all the data it will need. The observer doesn't need to query the subject for information. In the **'pull' model**, the subject merely notifies the observer that something happaned, and the observer queries the subject based to get the information it needs.
+ 
+ In another words
+ ---
+ 
+ Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.
