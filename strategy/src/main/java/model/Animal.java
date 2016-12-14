@@ -4,16 +4,6 @@ import model.enums.MovementSpeed;
 import model.interfaces.MovementBehaviour;
 import model.interfaces.SoundBehaviour;
 
-/**
- * In computer programming, the strategy pattern (also known as the policy pattern) is a behavioural software design pattern that enables an algorithm's behavior to be selected at runtime. The strategy pattern
- *
- * <ul>
- * <li>defines a family of algorithms,</li>
- * <li>encapsulates each algorithm, and</li>
- * <li>makes the algorithms interchangeable within that family.</li>
- * </ul>
- *
- **/
 public abstract class Animal {
 
     /**
