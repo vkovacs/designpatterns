@@ -47,9 +47,8 @@
     </dependencies>
 
     <modules>
-        <module>strategy</module>
-        <module>observer</module>
-        <module>decorator</module>
+        <module>structural</module>
+        <module>behavioral</module>
     </modules>
 
 
