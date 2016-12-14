@@ -1,5 +1,6 @@
 package interfaces;
 
+//Kid could be also implemented as an abstract class. Display could be implemented here by showing a property of the class, which property could be overwritten in child classes
 public interface Kid {
     /**
      * Calculates the cost of the dresses worn by the kid

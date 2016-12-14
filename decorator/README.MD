@@ -1,0 +1,3 @@
+Allows for the dynamic wrapping of objects in order to modify their existing responsibilities and behaviours. 
+
+Structural pattern.
