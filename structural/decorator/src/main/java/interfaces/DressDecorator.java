@@ -1,7 +1,16 @@
 package interfaces;
 
 public abstract class DressDecorator implements Kid {
+
+    /**
+     * The object which is decorated
+     */
     protected Kid kid;
+
+    /**
+     * Color of the dress
+     */
+    private Color color;
 
     /**
      * Enforce constructor creation in child classes
@@ -10,9 +19,11 @@ public abstract class DressDecorator implements Kid {
      * http://stackoverflow.com/questions/260666/can-an-abstract-class-have-a-constructor
      *
      * @param kid The kid to decorate
+     * @param color The color of the dress
      */
-    public DressDecorator(Kid kid) {
+    public DressDecorator(final Kid kid, final Color color) {
         this.kid = kid;
+        this.color = color;
     }
 
     /**
@@ -21,6 +32,6 @@ public abstract class DressDecorator implements Kid {
      */
     @Override
     public String display() {
-        return kid.display() + " " + this.getClass().getSimpleName();
+        return kid.display() + " "+ color.name() + " " + this.getClass().getSimpleName();
     }
 }

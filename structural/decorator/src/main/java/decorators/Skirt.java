@@ -1,11 +1,13 @@
 package decorators;
 
+import interfaces.Color;
 import interfaces.DressDecorator;
 import interfaces.Kid;
 
 public class Skirt extends DressDecorator {
-    public Skirt(Kid kid) {
-        super(kid);
+
+    public Skirt(final Kid kid, final Color color) {
+        super(kid, color);
     }
 
     @Override
