@@ -1,11 +1,10 @@
 language: java
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 notifications:
   email: false
   slack:
     rooms:
-      - crusader8-dev:BKBd1z5HXI3vpMZMjr2PE6oG#travis-ci
-    on_success: change # default: always
-    on_failure: always # default: always
+      secure: oPDt167VJFTic2G/OW8YW80byZe0nNZetRxi1nJHN0smFboTYnPvk9z0kRdGGk2zktgdKRxFj10U9uWrWN2DuQZhUOC+Rq58jXD+jwBC0wnBUk+SCzjzHVdUNkMicNaRYI+dQQy3TTGd9+rECXpLXwb4L3m2yRkh+PCSWp9Bb6AC126F3kgQSWiBD9OyLnWeM4arV49biLPtWO+vDYFf4WqH5AfHPkrliJ55eWKANFRFZE5sbEeFnfQyQIeJ8xi8PqaeQMsEJ3KR9YGRCxYPz0mSZdfMUcmd6yb1+KxJXUp843uBOVGalDIN3GOyuAtcMoBVYg4G4RCrWoUFQPJBRHYSeOtlLWqb+KfwvdtCndmlvi2+esSam5bGKcZkEaGKJMDU+U+iW2GJrdHvJQJ14pR0rgZS7w+bA4otT4cT2DuR793unoagOpBQMcLRDRS9Hbqv70fHqgNbtrQLJsH17P5XuUqCMvnlWc9+flf4J3yLM4pgZ1x6Zd++E2vHM2n8DAmh/SMOuFO3jBqzUlHz/vNiWFeWGwh8i29ABmVS/qMBtLWAmIlE02QdAkZusPfUevxGzJ/JMGtemSsw2Vy00IQiWcusFBxXHRWsM3RlBozRdJOtALwyEu3E3tbtUDfiKzLn/VFitj2xXPx3cXAqbBO4gmzBGvgv9Z+zG6x1B4A=
+    on_success: change
+    on_failure: always
