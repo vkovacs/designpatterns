@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>factory</artifactId>
+    <name>Factory pattern</name>
 
 
 </project>
