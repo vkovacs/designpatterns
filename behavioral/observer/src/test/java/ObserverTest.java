@@ -1,4 +1,6 @@
-import enums.Event;
+import hu.crs.designpatterns.behavioral.observer.EventListener;
+import hu.crs.designpatterns.behavioral.observer.EventSource;
+import hu.crs.designpatterns.behavioral.observer.enums.Event;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
