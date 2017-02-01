@@ -15,7 +15,6 @@
     <modules>
         <module>singleton</module>
         <module>factory</module>
-        <module>factorymethod</module>
     </modules>
 
 
