@@ -26,7 +26,7 @@ public class ElvisTest {
 
         Set<Future<Elvis>> futureSet = new HashSet<>();
 
-        ExecutorService pool = Executors.newFixedThreadPool(3);
+        ExecutorService pool = Executors.newFixedThreadPool(10);
 
         for (int i=0; i< MAX_THREAD; i++) {
             Callable<Elvis> callable = new ElvisCallable();
