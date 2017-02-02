@@ -10,6 +10,6 @@ public class FireArmFactory extends WeaponFactory {
         if ("Pistol".equals(weaponId)) {
             return new Pistol();
         }
-        return null;
+        throw new IllegalArgumentException();
     }
 }

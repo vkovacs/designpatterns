@@ -10,6 +10,6 @@ public class MeleeWeaponFactory extends WeaponFactory {
         if ("Sword".equals(weaponId)) {
             return new Sword();
         }
-        return null;
+        throw new IllegalArgumentException();
     }
 }
