@@ -2,11 +2,11 @@ package hu.crs.designpatterns.creational.abstractfactory.concretecreator;
 
 import hu.crs.designpatterns.creational.abstractfactory.concreteproduct.Magazine;
 import hu.crs.designpatterns.creational.abstractfactory.concreteproduct.Pistol;
-import hu.crs.designpatterns.creational.abstractfactory.creator.AbstractWeaponFactory;
+import hu.crs.designpatterns.creational.abstractfactory.creator.WeaponFactory;
 import hu.crs.designpatterns.creational.abstractfactory.product.Accessory;
 import hu.crs.designpatterns.creational.abstractfactory.product.Weapon;
 
-public class FireArmFactory extends AbstractWeaponFactory {
+public class FireArmFactory extends WeaponFactory {
 
     @Override
     public Weapon createWeapon(String weaponId) {
