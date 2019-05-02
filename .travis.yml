@@ -2,4 +2,4 @@ language: java
 jdk:
   - openjdk11
 script:
-  - ./gradlew sonarqube -Dsonar.host.url= https://sonarcloud.io -Dsonar.login=${SONAR_TOKEN}
+  - ./gradlew sonarqube -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${SONAR_TOKEN}
