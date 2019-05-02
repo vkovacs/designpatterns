@@ -1,3 +1,7 @@
+plugins {
+    id 'org.sonarqube' version '2.7'
+}
+
 apply plugin: 'java'
 
 repositories {
@@ -11,3 +15,12 @@ dependencies {
 
 sourceCompatibility = JavaVersion.VERSION_11
 targetCompatibility = JavaVersion.VERSION_11
+
+sonarqube {
+    properties {
+        property 'sonar.projectName', 'DesignPatterns'
+        property 'sonar.projectKey', 'hu.crs:design-patterns'
+        property 'sonar.organization', 'vkovacs-github'
+
+    }
+}

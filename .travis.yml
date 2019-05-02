@@ -1,17 +1,5 @@
 language: java
 jdk:
-- oraclejdk8
-notifications:
-  email: false
-  slack:
-    rooms:
-      secure: oPDt167VJFTic2G/OW8YW80byZe0nNZetRxi1nJHN0smFboTYnPvk9z0kRdGGk2zktgdKRxFj10U9uWrWN2DuQZhUOC+Rq58jXD+jwBC0wnBUk+SCzjzHVdUNkMicNaRYI+dQQy3TTGd9+rECXpLXwb4L3m2yRkh+PCSWp9Bb6AC126F3kgQSWiBD9OyLnWeM4arV49biLPtWO+vDYFf4WqH5AfHPkrliJ55eWKANFRFZE5sbEeFnfQyQIeJ8xi8PqaeQMsEJ3KR9YGRCxYPz0mSZdfMUcmd6yb1+KxJXUp843uBOVGalDIN3GOyuAtcMoBVYg4G4RCrWoUFQPJBRHYSeOtlLWqb+KfwvdtCndmlvi2+esSam5bGKcZkEaGKJMDU+U+iW2GJrdHvJQJ14pR0rgZS7w+bA4otT4cT2DuR793unoagOpBQMcLRDRS9Hbqv70fHqgNbtrQLJsH17P5XuUqCMvnlWc9+flf4J3yLM4pgZ1x6Zd++E2vHM2n8DAmh/SMOuFO3jBqzUlHz/vNiWFeWGwh8i29ABmVS/qMBtLWAmIlE02QdAkZusPfUevxGzJ/JMGtemSsw2Vy00IQiWcusFBxXHRWsM3RlBozRdJOtALwyEu3E3tbtUDfiKzLn/VFitj2xXPx3cXAqbBO4gmzBGvgv9Z+zG6x1B4A=
-    on_success: change
-    on_failure: always
-addons:
-  sonarqube:
-    token:
-      secure: Am6SYSSy5b9YxAzFaIl/mMcIYOvGSiDjodIaZbSdqc55JVW8noBj2G4DG/xB3Casc5iZ9uViQUoGxKP6IhrHpf/2KFp2DFFCAKo20V3HsRcbdqDbbHa2PRKOIuWudo7XzgREfm6flDN05+gh8SfPYlax8Kl+Rt5gTPyLMFOnSTSioTO42SCWC06xDikFmvPZkexHyE2jwBtFQx23L+e7CGh9a7H/+pChmBl/gX+l9F39acq5KEuLMcTKpd84muO/sa199eUOFmtLp+fQ8uiD5fTn7gZNC6buR3MTP8XvYOcjRYSkgjwlMi+XvqEP23b8hJQMVHYeUTJgO8mZQbFXuOsbZD/IDElruaSujRD8LrO2Pd6DAdGuYFnXk5hlzFGsXFPXk3tMdXvgqTV7+irhoEAilTxouTxpROLz6xmXcqb6M5FgcdVrMyujS2LHkeIL616ZZGDSG5hhhMvpVWstepr+BPyUdLPRTyH2LlS2VbN9BtOfWkb3d7vXW/PrRZcdGPq8p4ZSAqAYg/qv53V8adNCZECntNIF3tQODezs0D5YoMgRpnNRi2sDmBKPr4nUkhDpQKLiBH9in4MTPyh8oR4QndOP5Cncm7rkgabpD3TkG82N7WPSLlo64uCSzN+a3LtKtax1Fg3S7zvUabfrOLi8A3HN3pvAv9Hi6Riptqc=
+  - openjdk11
 script:
-  # JaCoCo is used to have code coverage, the agent has to be activated
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+  - ./gradlew sonarqube -Dsonar.host.url= https://sonarcloud.io -Dsonar.login=${SONAR_TOKEN}
